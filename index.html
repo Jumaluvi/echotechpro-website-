@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchotechPro Waste Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #d4f4d7; /* Light green background */
+        }
+
+        header {
+            background: #2ecc71; /* Darker green for header */
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #27ae60; /* Lighter green on hover */
+        }
+
+        section {
+            display: none; /* Hide all sections initially */
+            padding: 2em;
+            background: #ffffff; /* White background for sections */
+            margin: 1em auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section.active {
+            display: block; /* Show the active section */
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        /* Profile styling */
+        .profile {
+            margin-bottom: 2em;
+            text-align: center;
+        }
+
+        .profile img {
+            max-width: 150px;
+            border-radius: 50%;
+        }
+
+        .profile h3 {
+            margin: 0.5em 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            section {
+                padding: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EchotechPro Waste Management</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#leadership" onclick="showSection('leadership')">Leadership</a></li>
+                <li><a href="#team" onclick="showSection('team')">Team Members</a></li>
+                <li><a href="#services" onclick="showSection('services')">Services</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+	 <section id="image-slider">
+            <h2>Our Journey in Waste Management</h2>
+            <div class="image-slider">
+                <div class="images">
+                    <img src="Images/Brayo.jpg" alt="Brayo">
+                    <img src="Images/Terry.jpg" alt="Terry">
+                    <img src="Images/Faith.jpg" alt="Faith">
+                    <img src="Ochungo.jpg" alt="Image 4">
+                    <img src="Samuel.jpg" alt="Image 5">
+                </div>
+            </section>
+        <!-- About Us Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Ecotechpro Waste Management Solutions</p>
+            <p>Ecotechpro Waste Management Solutions is a leading waste management organization committed to promoting environmental sustainability...</p>
+    <p>Ecotechpro Waste Management Solutions is a leading waste management organization committed to promoting environmental sustainability and providing professional, innovative, and efficient waste management services to communities and businesses. We operate with a focus on improving environmental health, enhancing community well-being, and fostering sustainable living practices.</p>
+
+    <h3>Our Vision</h3>
+    <p>To be the most trusted waste management partner, inspiring sustainable living and creating environmentally safe communities.</p>
+
+    <h3>Our Mission</h3>
+    <p>To deliver innovative waste management solutions through exceptional service delivery, community engagement, and environmental conservation, ensuring cleaner and healthier living environments for all.</p>
+
+    <h3>Core Values</h3>
+    <ul>
+        <li><strong>Sustainability:</strong> Advocating for environmentally friendly practices.</li>
+        <li><strong>Accountability:</strong> Transparency in service delivery and operations.</li>
+        <li><strong>Community Engagement:</strong> Building partnerships to achieve shared goals.</li>
+        <li><strong>Innovation:</strong> Embracing cutting-edge technologies for efficient waste management.</li>
+    </ul>
+
+    <h3>How We Operate</h3>
+    <h4>1. Service Offerings</h4>
+    <ul>
+        <li><strong>Door-to-Door Waste Collection:</strong>
+            <ul>
+                <li><strong>Pickup days:</strong> Wednesdays and Sundays starting at 7:00 AM.</li>
+                <li><strong>Waste Sorting Requirements:</strong>
+                    <ul>
+                        <li><strong>Organic Waste:</strong> Deposited in bins provided within the premises.</li>
+                        <li><strong>Recyclables (e.g., plastics, glass, paper):</strong> Disposed of in biodegradable bags provided by Ecotechpro.</li>
+                        <li><strong>Non-Recyclables (e.g., non-biodegradable materials):</strong> Placed in separate biodegradable bags.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><strong>Private Pickup Services:</strong> For clients requiring customized waste collection services outside the regular schedule.</li>
+    </ul>
+
+    <h4>2. Payment Structure</h4>
+    <ul>
+        <li><strong>Door-to-Door Collection:</strong> KES 300 per household monthly.</li>
+        <li><strong>Private Pickup Services:</strong> KES 600 per session.</li>
+        <li><strong>Payment Mode:</strong> Integrated with monthly rent and payable to landlords/property management by the 10th of every month.</li>
+    </ul>
+
+    <h4>3. Additional Services</h4>
+    <ul>
+        <li><strong>Environmental Cleanups:</strong> Organizing community-led cleanup initiatives in collaboration with local authorities.</li>
+        <li><strong>Waste Education Campaigns:</strong> Educating clients and communities on proper waste disposal and recycling.</li>
+        <li><strong>Long-Term Environmental Security:</strong> Measures to prevent illegal waste dumping by outsiders, supported by a KES 1,500 monthly fee per landlord.</li>
+    </ul>
+
+    <h3>Institutional Structure</h3>
+    <p>Ecotechpro Waste Management Solutions operates with a skilled and dedicated team:</p>
+    <ul>
+        <li><strong>Founders:</strong> Strategic management and quality control.</li>
+        <li><strong>Logistics Team:</strong> Route optimization and waste transport coordination.</li>
+        <li><strong>Pickup Agents:</strong> On-ground collection and sorting.</li>
+        <li><strong>Sales and Marketing Team:</strong> Customer engagement and service promotion.</li>
+        <li><strong>Support Staff:</strong> Administrative and client support services.</li>
+    </ul>
+
+    <h3>Policies and Guidelines</h3>
+    <ul>
+        <li><strong>Waste Placement:</strong> All sorted waste should be placed at the doorstep by 7:00 AM on pickup days.</li>
+        <li><strong>Proper Sorting:</strong> Clients must separate organic, recyclable, and non-recyclable waste as instructed.</li>
+        <li><strong>Timely Payments:</strong> Late payments result in service suspension until dues are cleared.</li>
+        <li><strong>Compliance:</strong> Landlords and property managers ensure all tenants adhere to waste policies.</li>
+    </ul>
+
+    <h3>Technology Integration</h3>
+    <ul>
+        <li><strong>Mobile Payment Systems:</strong> Payment through Paybill for added convenience.</li>
+        <li><strong>Client Management Tools:</strong> Tracking service requests, payments, and feedback.</li>
+        <li><strong>Website Development Features:</strong>
+            <ul>
+                <li><strong>Client Portal:</strong> Personalized accounts for tracking payment history, scheduling services, and submitting inquiries.</li>
+                <li><strong>Service Updates:</strong> Timely notifications for pickups, cleanups, and policy changes.</li>
+                <li><strong>Educational Resources:</strong> Waste management tips and sustainability guides.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Future Goals</h3>
+    <ul>
+        <li><strong>Expansion:</strong> Reaching underserved areas and expanding our service network.</li>
+        <li><strong>Advanced Technologies:</strong> Adopting AI and IoT for waste tracking and management.</li>
+        <li><strong>Sustainability Projects:</strong> Partnering with government agencies, NGOs, and corporates for green initiatives.</li>
+        <li><strong>Community Empowerment:</strong> Creating job opportunities and training for local youth in waste management and environmental conservation.</li>
+    </ul>
+
+    <h3>Contact Us</h3>
+    <p>For inquiries or partnership opportunities, contact us:</p>
+    <ul>
+        <li><strong>Phone:</strong> 0799319018</li>
+        <li><strong>Email:</strong> info@ecotechpro.co.ke</li>
+        <li><strong>Website:</strong> www.ecotechpro.co.ke (Coming Soon)</li>
+    </ul>
+
+    <p>Together, we can ensure a cleaner, healthier, and more sustainable future. Thank you for choosing Ecotechpro Waste Management Solutions.</p>
+</section>
+
+        </section>
+
+        <!-- Leadership Section -->
+        <section id="leadership">
+            <h2>Leadership</h2>
+            <div class="profile">
+                <h3>CEO: Samwel Sino</h3>
+                <p>Samwel Sino has been the CEO of EcotechPro since its inception...</p>
+            </div>
+            <div class="profile">
+                <h3>Managing Director: Terry Ochungo</h3>
+                <p>Terry has played a key role in the company's growth...</p>
+            </div>
+            <div class="profile">
+                <h3>HR Manager: Faith</h3>
+                <p>Faith is responsible for recruitment and employee well-being...</p>
+            </div>
+            <div class="profile">
+                <h3>IT Manager: Juma Abdallah Luvi</h3>
+                <p>Juma ensures that our systems and website are functioning smoothly...</p>
+            </div>
+            <div class="profile">
+                <h3>Logistics Manager: Hashim</h3>
+                <p>Hashim oversees the waste collection and delivery network...</p>
+            </div>
+            <div class="profile">
+                <h3>Marketing Manager: Brian</h3>
+                <p>Brian handles the marketing strategies and public relations...</p>
+            </div>
+        </section>
+
+        <!-- Team Members Section -->
+        <section id="team">
+            <h2>Team Members</h2>
+            <p>Meet the hardworking team who make it all happen...</p>
+            <!-- Add team members content here -->
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Services</h2>
+            <p>Learn more about the waste management services we offer...</p>
+          
+            <ul>
+                <li><strong>Door-to-Door Waste Collection:</strong> Pickup on Wednesdays and Sundays at 7:00 AM, with waste sorted into organic, recyclable, and non-recyclable categories.</li>
+                <li><strong>Private Pickup Services:</strong> Custom waste collection outside the regular schedule for clients with specific needs.</li>
+                <li><strong>Waste Sorting and Segregation Assistance:</strong> Help clients properly sort organic, recyclable, and non-recyclable materials.</li>
+                <li><strong>Environmental Cleanup Services:</strong> Organizing and coordinating community-led cleanups in collaboration with local authorities.</li>
+                <li><strong>Waste Education Campaigns:</strong> Educating clients and communities on sustainable waste disposal and recycling practices.</li>
+                <li><strong>Long-Term Environmental Security:</strong> Preventing illegal waste dumping through security measures and monitoring.</li>
+                <li><strong>Recycling and Sustainable Waste Disposal:</strong> Ensuring proper disposal of recyclable materials.</li>
+                <li><strong>Waste Disposal Consultancy:</strong> Providing advice on efficient waste management and recycling practices for businesses and communities.</li>
+                <li><strong>Community Engagement and CSR Initiatives:</strong> Supporting environmental sustainability projects in partnership with government and NGOs.</li>
+                <li><strong>Mobile Payment Integration for Services:</strong> Convenient mobile payments for waste management services through Paybill services.</li>
+                <li><strong>Client Support and Feedback Management:</strong> Providing customer service for inquiries and support requests.</li>
+                <li><strong>Technology Integration and Client Portal:</strong> Offering a client portal for tracking services, payments, and sustainability tips.</li>
+                <li><strong>Sustainability and Green Initiative Projects:</strong> Partnering with other organizations for large-scale sustainability efforts.</li>
+                <li><strong>Job Creation and Training in Waste Management:</strong> Providing job opportunities and training for local youth in environmental conservation and waste management.</li>
+                <li><strong>Service Expansion to Underserved Areas:</strong> Expanding services to remote areas with limited waste management resources.</li>
+         </ul>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For inquiries or partnership opportunities, contact us:</p>
+            <ul>
+                <li><strong>Phone:</strong> 0799319018</li>
+                <li><strong>Email:</strong> info@ecotechpro.co.ke</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EcotechPro Waste Management. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Show the selected section
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+    </script>
+</body>
+</html>
